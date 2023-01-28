@@ -6,6 +6,10 @@ body {
     font-family: 'MinecraftiaRegular';
 }
 
+#info {
+    background-image: url(images/shaders_backdrop.jpg);    
+}
+
 h1 {
     color:white;
     text-align: center;
@@ -16,11 +20,32 @@ h2 {
 }
 
 a {
+    text-align: center;
     color:azure;
     font-size: 21px;
     text-decoration: none;
+    
 }
 
 a:hover {
     color:orange;
+}
+
+button {
+    background-color: gray;
+}
+
+#preselect:hover {
+    color:orange;
+}
+#preselect:active {
+    color:orangered;
+}
+
+.centerElement {
+    /* dsplay block displays image similar to how a paragraph is displayed */
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -20,6 +20,8 @@ environmentButton.addEventListener("click", function() {
     }
 
     // case when the input field is a string
+    // /[a-z]/i represents all letters case-insensitive
+    // https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript
     if (yPos.value.match(/[a-z]/i)) {
         Layer.src = "images/SuperFlatGlitch.png";
         location_name.innerHTML = "Error: Please enter a REAL NUMBER!";

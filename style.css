@@ -1,0 +1,26 @@
+/* minecraft font is ready to be used */
+@import url("https://fontlibrary.org//face/minecraftia");
+
+body {
+    background-image: url(images/dirt_background.jpg);
+    font-family: 'MinecraftiaRegular';
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+a {
+    color:azure;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+a:hover {
+    color:orange;
+}

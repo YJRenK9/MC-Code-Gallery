@@ -19,6 +19,16 @@ h2 {
     color: white;
 }
 
+p {
+    color:white;
+}
+
+pre {
+    color:white;
+    font-family: 'MinecraftiaRegular';
+    font-size: larger;
+}
+
 a {
     text-align: center;
     color:azure;
@@ -42,6 +52,14 @@ button {
     color:orangered;
 }
 
+.imageSpacing {
+    margin-left: 96px;
+}
+
+.imageSpacing2 {
+    margin-left: 48px;
+}
+
 .centerElement {
     /* dsplay block displays image similar to how a paragraph is displayed */
     display: block;
@@ -49,3 +67,5 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* style="margin-left: 144px; margin-bottom: 48px;"style="margin-left: 24px;"style="margin-left: 16px;" */

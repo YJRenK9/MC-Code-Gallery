@@ -8,23 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="color:white;">Overworld Layers</h1>
+    <h1>Overworld Layers</h1>
     
     <br><br>
 
-    <img src="images/superflat.webp" width="90%" height="90%" class="centerElement" id="imageLayer" alt="supahflatz">
+    <img src="images/plains.jpg" width="50%" height="50%" class="centerElement" id="imageLayer" alt="supahflatz">
 
     <br><br>
-    <h3 style="color:white;text-align:center;">Enter a number for the vertical position to see what the overworld layer would look like</h3>
-    <div class="centerElement">
-        <span style="color:white;font-size: x-large;">y = </span> <input type="text" id="y-coordinate" style="font-size:large;">
-    </div>
+    <h3 style="color:white;text-align:center;">Click on the arrow buttons to ascend or descend certain layers</h3>
+    <br>
+    <h1 id="getVerticalPosition">y = 5</h1>
     <!-- white-space:nowrap; -->
     <br>
-    <button class="centerElement" id="calculateLayer" style="color:white;font-size:x-large;"><span id="preselect">Calculate Layer</span></button>
+
+    <!-- Need div tag to center two images on the same row -->
+    <div class="centerElement">
+        <img src="images/Left_Arrow.png" id="descend" alt="left">
+        <img src="images/Right_Arrow.png" id="ascend" alt="right">
+    </div>
+    
     <br>
-    <h3 id="layerName" style="color:white;text-align:center;">Layer: superflat</h3>
+    <h3 id="layerName" style="text-align:center;">Layer: Plains</h3>
     <br><br>
+    
     <a href="index.html" class="centerElement">MC Data Types</a>
     <br>
     

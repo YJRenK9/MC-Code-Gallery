@@ -6,14 +6,14 @@ Now that you learned how to create variables and if/else statements, it's time t
 
 I'd like to give you a warning that this project is pretty lengthy and requires the repetition of creating variables.  Hence, why this project is divided into 3 parts.  Not to mention, images will also guide you for this instructions file.  
 
-##Objectives
+## Objectives
 
 Use **JavaScript** to display text and manipulate elements on webpages.  Also, use HTML and CSS to display annd format images on webpages.
   1. Create a gallery of Entity data types
   2. Create a gallery of Game Rule data types
   3. Create another webpage that lets the user click on the arrow buttons to change the vertical position along with the Minecraft environment
 
-##Prerequisites
+## Prerequisites
 
 To complete this project, students should have the following:
   + Basic understanding of HTML structures and attributes.
@@ -23,6 +23,6 @@ To complete this project, students should have the following:
     + int, float, string, and bool variables
     + if/else statements 
 
-##Concepts
+## Concepts
 
 WIP

@@ -29,21 +29,17 @@ pre {
 
 a {
     text-align: center;
-    color:azure;
+    background-color: gray;
+    color: rgb(0, 255, 0);
     font-size: 21px;
     text-decoration: none;
     
-}
-
-a:hover {
-    color:orange;
 }
 
 .centerElements {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-right: 96px; */
     flex-direction: row;
 }
 

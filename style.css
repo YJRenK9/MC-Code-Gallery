@@ -15,12 +15,14 @@ h1 {
     text-align: center;
 }
 
-h2 {
+h2, h3 {
     color: white;
 }
 
 p {
     color:white;
+    font-family: 'MinecraftiaRegular';
+    font-size: larger;
 }
 
 pre {
@@ -52,14 +54,38 @@ button {
     color:orangered;
 }
 
-.imageSpacing {
-    margin-left: 96px;
+.centerElements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-right: 96px; */
+    flex-direction: row;
 }
 
-.imageSpacing2 {
-    margin-left: 48px;
+.centerText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 96px; */
+    flex-direction: row;
 }
 
+.changeImageSize {
+    width: 255px;
+    height: 255px;
+}
+
+.changeImageSize2 {
+    width: 320px;
+    height: 320px;
+}
+
+.changeImageSize3 {
+    width: 600px;
+    height: 300px;
+}
+
+/* Another way to center elements */
 .centerElement {
     /* dsplay block displays image similar to how a paragraph is displayed */
     display: block;

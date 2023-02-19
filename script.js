@@ -1,73 +1,97 @@
-let Layer = document.getElementById("imageLayer");
-let yPos = document.getElementById("y-coordinate");
-let environmentButton = document.getElementById("calculateLayer");
-let location_name = document.getElementById("layerName");
+var Layer = document.getElementById("imageLayer");
+var descendVeritcally = document.getElementById("descend");
+var ascendVeritcally = document.getElementById("ascend");
+var verticalPosition = document.getElementById("getVerticalPosition");
+var location_name = document.getElementById("layerName");
 
-environmentButton.addEventListener("click", function() {
-    console.log(yPos.value);
-    // finds the data type of the input value (default is string)
-    console.log(typeof yPos.value);
-    //console.log(yPos.value.length);
-    // console.log(yPos.value == 42);
+var y_position = 5;
 
-    //case when there's no input
-    if (yPos.value.length === 0) {
-        location_name.innerHTML = "Error: Input cannot be blank! Please enter a REAL NUMBER!";
-        location_name.style.color = "red";
-        return;
-    } else {
-        location_name.style.color = "white";
-    }
-
-    // case when the input field is a string
-    // /[a-z]/i represents all letters case-insensitive
-    // https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript
-    if (yPos.value.match(/[a-z]/i)) {
-        Layer.src = "images/SuperFlatGlitch.png";
-        location_name.innerHTML = "Error: Please enter a REAL NUMBER!";
-        location_name.style.color = "red";
-        return;
-    }
-
-    // converts string to int
-    let theYPos = Number(yPos.value);
-    //console.log(typeof theYPos);
-    //console.log(theYPos);
+descendVeritcally.addEventListener("click", function() {
+    // decrease the y position
+    y_position -= 1;
     
-    // when the user enters a valid input
-    if (theYPos >= 2048) {
+    //update the y position
+    verticalPosition.innerHTML = "y = " + y_position;
+
+    // frequently checks the y position in order to determine what layer the player is in
+    if (y_position >= 48) {
         Layer.src = "images/Space.png";
         location_name.innerHTML = "Layer: Outer Space";
-    } else if (theYPos >= 256) {
+    } else if (y_position >= 24) {
         Layer.src = "images/Sky.jpg";
         location_name.innerHTML = "Layer: Above the Clouds";
-    } else if (theYPos >= 128) {
+    } else if (y_position >= 12) {
         Layer.src = "images/mountains.webp";
         location_name.innerHTML = "Layer: Mountains";
-    } else if (theYPos >= 96) {
+    } else if (y_position >= 9) {
         Layer.src = "images/Jungle.webp";
         location_name.innerHTML = "Layer: Jungle";
-    } else if (theYPos >= 72) {
+    } else if (y_position >= 7) {
         Layer.src = "images/Forest.webp";
         location_name.innerHTML = "Layer: Forest";
-    } else if (theYPos >= 60 || theYPos > 48) {
+    } else if (y_position >= 5) {
         Layer.src = "images/plains.jpg";
         location_name.innerHTML = "Layer: Plains";
-    } else if (theYPos >= 48 || theYPos > 16) {
+    } else if (y_position >= 2) {
         Layer.src = "images/Cave.webp";
         location_name.innerHTML = "Layer: Caves";
-    } else if (theYPos >= 16 || theYPos > -8) {
+    } else if (y_position >= 0) {
         Layer.src = "images/Lava_Cave.webp";
         location_name.innerHTML = "Layer: Lava Caves";
-    } else if (theYPos <= -8 && theYPos > -48) {
+    } else if (y_position >= -4) {
         Layer.src = "images/Deepslate_Cave.webp";
         location_name.innerHTML = "Layer: Deepslate Caves";
-    } else if (theYPos <= -48 && theYPos >= -128) {
+    } else if (y_position >= -12) {
         Layer.src = "images/DeepDark.webp";
         location_name.innerHTML = "Layer: The Deep Dark";
     } else {
         Layer.src = "images/The_Void.webp";
         location_name.innerHTML = "Layer: Void";
     }
-    
 });
+
+ascendVeritcally.addEventListener("click", function() {
+    // increase the y position
+    y_position += 1;
+
+    // update the y postion
+    verticalPosition.innerHTML = "y = " + y_position;
+
+    // frequently checks the y position in order to determine what layer the player is in
+    if (y_position >= 48) {
+        Layer.src = "images/Space.png";
+        location_name.innerHTML = "Layer: Outer Space";
+    } else if (y_position >= 24) {
+        Layer.src = "images/Sky.jpg";
+        location_name.innerHTML = "Layer: Above the Clouds";
+    } else if (y_position >= 12) {
+        Layer.src = "images/mountains.webp";
+        location_name.innerHTML = "Layer: Mountains";
+    } else if (y_position >= 9) {
+        Layer.src = "images/Jungle.webp";
+        location_name.innerHTML = "Layer: Jungle";
+    } else if (y_position >= 7) {
+        Layer.src = "images/Forest.webp";
+        location_name.innerHTML = "Layer: Forest";
+    } else if (y_position >= 5) {
+        Layer.src = "images/plains.jpg";
+        location_name.innerHTML = "Layer: Plains";
+    } else if (y_position >= 2) {
+        Layer.src = "images/Cave.webp";
+        location_name.innerHTML = "Layer: Caves";
+    } else if (y_position >= 0) {
+        Layer.src = "images/Lava_Cave.webp";
+        location_name.innerHTML = "Layer: Lava Caves";
+    } else if (y_position >= -4) {
+        Layer.src = "images/Deepslate_Cave.webp";
+        location_name.innerHTML = "Layer: Deepslate Caves";
+    } else if (y_position >= -12) {
+        Layer.src = "images/DeepDark.webp";
+        location_name.innerHTML = "Layer: The Deep Dark";
+    } else {
+        Layer.src = "images/The_Void.webp";
+        location_name.innerHTML = "Layer: Void";
+    }
+});
+
+// if you put the if/else statement outside of the event listeners, then it'll only run once

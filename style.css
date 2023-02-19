@@ -11,21 +11,23 @@ h1 {
     text-align: center;
 }
 
+/* Join 2 tags together to have the same styling (and write less code) */
 h2, h3 {
     color: white;
 }
 
-p {
+/* Join 2 tags together to have the same styling (and write less code) */
+p, pre {
     color:white;
     font-family: 'MinecraftiaRegular';
     font-size: larger;
 }
 
-pre {
+/* pre {
     color:white;
     font-family: 'MinecraftiaRegular';
     font-size: larger;
-}
+} */
 
 a {
     text-align: center;

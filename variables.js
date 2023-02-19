@@ -11,9 +11,9 @@ var stringValue4 = " Dinnerbone";
 
 var paragraph1 = document.getElementById("text");
 paragraph1.innerHTML = dataType1 + variableName1 + "=" + stringValue1;
-paragraph1.innerHTML += "    " + dataType1 + variableName2 + "=" + stringValue2;
-paragraph1.innerHTML += "    " + dataType1 + variableName3 + "=" + stringValue3;
-paragraph1.innerHTML += "    " + dataType1 + variableName4 + "=" + stringValue4;
+paragraph1.innerHTML += "\t\t" + dataType1 + variableName2 + "=" + stringValue2;
+paragraph1.innerHTML += "\t\t" + dataType1 + variableName3 + "=" + stringValue3;
+paragraph1.innerHTML += "\t\t" + dataType1 + variableName4 + "=" + stringValue4;
 
 var dataType2 = "int ";
 
@@ -28,9 +28,9 @@ var intValue4 = 1;
 
 var paragraph2 = document.getElementById("wholeNumbers");
 paragraph2.innerHTML = dataType2 + variableName5 + "= " + intValue1;
-paragraph2.innerHTML += "    " + dataType2 + variableName6 + "= " + intValue2;
-paragraph2.innerHTML += "    " + dataType2 + variableName7 + "= " + intValue3;
-paragraph2.innerHTML += "    " + dataType2 + variableName8 + "= " + intValue4;
+paragraph2.innerHTML += "\t\t" + dataType2 + variableName6 + "= " + intValue2;
+paragraph2.innerHTML += "\t\t" + dataType2 + variableName7 + "= " + intValue3;
+paragraph2.innerHTML += "\t\t" + dataType2 + variableName8 + "= " + intValue4;
 
 var dataType3 = "float ";
 
@@ -40,7 +40,7 @@ var floatValue2 = 1.6;
 
 var paragraph3 = document.getElementById("decimalNumbers");
 paragraph3.innerHTML = dataType3 + variableName9 + "= " + floatValue1;
-paragraph3.innerHTML += "    " + dataType3 + variableName9 + "= " + floatValue2;
+paragraph3.innerHTML += "\t\t\t\t\t\t" + dataType3 + variableName9 + "= " + floatValue2;
 
 var dataType4 = "bool ";
 

@@ -4,7 +4,7 @@ Now that you learned how to create variables and if/else statements, it's time t
 
 ![Gallery1](images/Examples/MC_DataTypes_Gallery.png) ![Gallery2](images/Examples/MC_DataTypes_Gallery2.png) ![Gallery3](images/Examples/Overworld_Layers_Gallery.png)
 
-I'd like to give you a **warning** that this project is pretty lengthy and requires the repetition of creating variables.  Hence, why this project is divided into 3 parts.  Not to mention, images will also guide you for this instructions file.  
+I'd like to give you a **warning** that this project is pretty lengthy and requires the repetition of creating variables.  Hence, why this project is divided into 3 parts. 
 
 ## Objectives
 
@@ -90,15 +90,66 @@ Notice how '+=' is used to join multiple strings together.  This is to add more 
 
 ### Part I
 
+WIP
 
 ### Part II
 
+WIP
 
 ### Part III
 
+WIP
 
 ### Part IV
 
+WIP
 
 ## Stretch Goals
-WIP
+
+### Change Image Size within HTML files
+
+You learned how to resize images in the CSS file.
+```css
+.changeImageSize {
+    width: 255px;
+    height: 255px;
+}
+
+.changeImageSize2 {
+    width: 320px;
+    height: 320px;
+}
+
+.changeImageSize3 {
+    width: 600px;
+    height: 300px;
+}
+```
+You can also resize images in HTML, and it's "easier" as it requires less lines of code.  Just type in the width and height inside of the image tag.  Here's an example of resizing an image in HTML:
+```html
+<!-- image became twice as large -->
+<img width="320px" height="320px" src="images/MC-DataTypes/Netherite_Axe.webp" alt="netherite axe">
+```
+
+### Add hover animation for links
+
+You learned how to color the text of the link, give it a background color, and change its font size.  You also learned how to position the link.
+```css
+a {
+    color: rgb(0, 255, 0);
+    background-color: gray;
+    font-size: 21px;
+    text-align: center;
+    text-decoration: none;
+}
+```
+Now try making the link's text color white and have it change to orange if the mouse cursor is hovering over it.
+
+### Create an input box instead of arrow "buttons"
+
+The advantage of having arrow "buttons" is having more user interaction.  The disadvantage is it can take a lot of time to go through a large range of numbers(unless if your variable can increment/decrement by a large amount).  A way around this disadvantage is by making the y_position range smaller.  But in Minecraft, going deep underground takes more than a few blocks.  So, an input box lets you type in a number and display the result in seconds.  You could create a ```<form>``` tag but that would redirect to a webpage.  Instead of going through that hassle, you can create an input tag and a button tag.  
+Although it's easy to implement an input box, you'll deal with more test cases.  Like most programming languages, input returns a string value.  Because of this, you must check if the input contains letters or other non-numeric characters.  If it is, then display an error message.  Otherwise, convert the input value into a number.  In order to compare your input value with numbers, it must be converted to a number.          
+
+### Create another webpage of Minecraft coding references
+
+Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.    

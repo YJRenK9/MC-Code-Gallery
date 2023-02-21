@@ -4,7 +4,7 @@ Now that you learned how to create variables and if/else statements, it's time t
 
 ![Gallery1](images/Examples/MC_DataTypes_Gallery.png) ![Gallery2](images/Examples/MC_DataTypes_Gallery2.png) ![Gallery3](images/Examples/Overworld_Layers_Gallery.png)
 
-I'd like to give you a **warning** that this project is pretty lengthy and requires the repetition of creating variables.  Hence, why this project is divided into 3 parts. 
+I'd like to give you a **warning** that this project could be lengthy and requires some repetition of creating variables.  Not to mention, this may be a long read as this read me file has around 330 lines of text.  Hence, why this project is divided into 6 parts. 
 
 ## Objectives
 
@@ -106,31 +106,28 @@ Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery
 
   1. create a ```<h1>``` tag that displays "Welcome to the Minecraft Code Gallery!" (do not include double quotes)
   2. create 2 ```<br>``` tags
-  3. create a ```<h2>``` tag that displays "Entity Data Types"
+  3. create a ```<h2>``` tag that displays "Game Rule Data Types"
   4. create a br tag
-  5. create a ```<div>``` tag that has a class called centerElements
-  6. create 4 img tags inside of the div tag 
-    + The first image should be Iron_Golem.webp that's in MC-DataTypes folder
-    + The second image should be Minecraft_Slime.webp that's in MC-DataTypes folder
-    + The third image should be rainbow_sheep.gif that's in MC-DataTypes folder
-    + the fourth image should be upside_down_mob.gif that's in MC-DataTypes folder
-    + **Hint:** the images used are from images/MC-DataTypes/
-  7. Create a ```<pre>``` tag that has an id called text
+  5. create 2 ```<div>``` tags that have a class called centerElements
+  6. create 2 img tags inside of the first div tag 
+    + The first image should be superflat.webp
+    + The second image should be SuperFLatGlitch.png
+    + Both images have a class called changeImageSize
+  7. Create a ```<pre>``` tag that has an id called booleans1
+    + this pre tag is in the second div tag
   8. create 2 br tags
-  9. Repeat steps 5 ~ 8
-    + The first image should be Stone.webp that's in MC-DataTypes folder
-    + The second image should be sword_durability.png that's in MC-DataTypes folder
-    + The third image should be Potion_of_Swiftness.webp that's in MC-DataTypes folder
-    + the fourth image should be Fly.webp that's in MC-DataTypes folder
-    + The pre tag should have an id called wholeNumbers
-  10. Repeat steps 5 ~ 7
-    + The first image should be Diamond_Pickaxe.webp that's in MC-DataTypes folder
-    + The second image should be Diamond_Sword.webp that's in MC-DataTypes folder
-    + The pre tag should have an id called decimal numbers
-      + the pre tag should be inside of a div tag with a class called centerElements
-  11. create an ```<a>``` tag that displays "Overworld Layers"
+  9. create 2 more ```<div>``` tags that have a class called centerElements
+  10. create 2 more img tags inside of the third div tag 
+    + The third image should be keptInventory.webp
+    + The fourth image should be didNotKeepInventory.webp
+    + Both images have a class called changeImageSize
+  11. Create a ```<pre>``` tag that has an id called booleans2
+    + this pre tag is in the fourth div tag
+  12. create an ```<a>``` tag that displays "Overworld Layers"
       + its href should be overworld_layers.html
       + its class should be centerElement
+      
+Completing Part2A means you have the images and text approximately positioned at the center of the webpage (except for the header 2)
 
 ### Part 2B: 2nd HTML File (overworld_layers.html)
 
@@ -150,8 +147,8 @@ Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery
     + type in centerElements as its class 
   9. create a div tag that has centerElements as its class
     + 2 img tags should be inside of this tag
-      + the first image should be Left_Arrow.png and descend as its id
-      + the second image should be Right_Arrow.png and ascend as its id
+    + the first image should be Left_Arrow.png and descend as its id
+    + the second image should be Right_Arrow.png and ascend as its id
   10. create another br tag
   11. create an ```<a>``` tag that displays "MC Data Types"
     + its href should be index.html
@@ -188,12 +185,11 @@ This will only make the minecraftia font available to use for your webpage. So, 
     + color is white
     + font family is MinecraftiaRegular
     + font size is larger
+    
 The reason why we update the font family to the pre tags is because the font from console.log() cannot be changed.  So, we must change the JavaScript text via the pre selector.
   
-  7. create 3 class selectors called changeImageSize, changeImageSize2, and changeImageSize3
-    + the first one should have a width and height of 255px
-    + the second one should have a width and height of 320px
-    + the third one should have a width of 600px and a height of 300px
+  7. create a class selector called changeImageSize
+    + a width of 600px and a height of 300px
   8. create a class selector called centerElements, and the the following attributes should have:
     + display is flex (to create a flex box)
     + justify content is space around (whitespacing at the left and right sides of the images)
@@ -206,6 +202,8 @@ The reason why we update the font family to the pre tags is because the font fro
     + font size is 21px
     + text decoration is none (no underline for links)
 
+By finishing Part 3, you have incorporated the Minecraft aesthetic to your website :)
+
 ### Part 4A: 1st JavaScript File (variables.js) 
 
   1. add variables.js to index.html by doing the following inside the end of the ```<body>``` tag:
@@ -213,8 +211,19 @@ The reason why we update the font family to the pre tags is because the font fro
   <!--  some html code that's above enabling JS  -->
   <script src="variables.js"></script>
   ```
-  2. The
-  3. 
+  2. create the following string variables
+    + dataType, stores "bool "
+    + variableName1, stores "activateGlitchArt"
+    + variableName2, stores "keepInventory"
+  3. create the following boolean variables
+    + boolValue1, stores false
+    + boolValue2, stores true
+  4. create a variable called paragraph1, that gets the element's id "booleans1"
+  5. have paragraph1's innerHTML string concactenate dataType, variableName1, " = ", and boolValue1 (**Hint:** use + in between variables)
+  6. have paragraph1's innerHTML also string concactenate "\t\t\t\t", dataType, variableName1, and boolValue2 (**Hint:** use +=)
+  7. create a variable called paragraph2, that gets the element's id "booleans2"
+  8. have paragraph2's innerHTML string concactenate dataType, variableName2, " = ", and boolValue1 (**Hint:** use + in between variables)
+  9. have paragraph1's innerHTML also string concactenate "\t\t\t\t", dataType, variableName2, and boolValue2 (**Hint:** use +=)
 
 ### Part 4B: 2nd JavaScript File (script.js)
 
@@ -318,4 +327,4 @@ Although it's easy to implement an input box, you'll deal with more test cases. 
 
 ### Create another webpage of Minecraft coding references
 
-Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.    
+Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.  You can also apply int, float, and string variables to the rest of the minecraft images provided in the images zip file.   

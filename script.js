@@ -1,11 +1,21 @@
+// used to change the image
 var Layer = document.getElementById("imageLayer");
+
+// used to decrease the displayed y_position value
 var descendVeritcally = document.getElementById("descend");
+// used to increase the displayed y_position value
 var ascendVeritcally = document.getElementById("ascend");
+
+// used to display the y_postion on the webpage
 var verticalPosition = document.getElementById("getVerticalPosition");
+
+// used to get the name of the layer depending on the y_position
 var location_name = document.getElementById("layerName");
 
+// the vertical position
 var y_position = 5;
 
+// decreases the vertical position when the user clicks on the left arrow
 descendVeritcally.addEventListener("click", function() {
     // decrease the y position
     y_position -= 1;
@@ -45,11 +55,13 @@ descendVeritcally.addEventListener("click", function() {
         Layer.src = "images/DeepDark.webp";
         location_name.innerHTML = "Layer: The Deep Dark";
     } else {
+        // when the y position is below -12
         Layer.src = "images/The_Void.webp";
         location_name.innerHTML = "Layer: Void";
     }
 });
 
+// increases the vertical position when the user clicks on the right arrow
 ascendVeritcally.addEventListener("click", function() {
     // increase the y position
     y_position += 1;
@@ -89,6 +101,7 @@ ascendVeritcally.addEventListener("click", function() {
         Layer.src = "images/DeepDark.webp";
         location_name.innerHTML = "Layer: The Deep Dark";
     } else {
+        // when the y position is below -12
         Layer.src = "images/The_Void.webp";
         location_name.innerHTML = "Layer: Void";
     }

@@ -102,25 +102,173 @@ In this folder, create the following files:
 
 Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery/blob/main/images.zip (a download button should be present).  Drag that zip file in the folder called MC_Code_Gallery and unzip it.  You should have the images folder with minecraft images present in your project folder. 
 
-### Part 2A:
+### Part 2A: 1st HTML File (index.html)
 
-WIP
+  1. create a ```<h1>``` tag that displays "Welcome to the Minecraft Code Gallery!" (do not include double quotes)
+  2. create 2 ```<br>``` tags
+  3. create a ```<h2>``` tag that displays "Entity Data Types"
+  4. create a br tag
+  5. create a ```<div>``` tag that has a class called centerElements
+  6. create 4 img tags inside of the div tag 
+    + The first image should be Iron_Golem.webp that's in MC-DataTypes folder
+    + The second image should be Minecraft_Slime.webp that's in MC-DataTypes folder
+    + The third image should be rainbow_sheep.gif that's in MC-DataTypes folder
+    + the fourth image should be upside_down_mob.gif that's in MC-DataTypes folder
+    + **Hint:** the images used are from images/MC-DataTypes/
+  7. Create a ```<pre>``` tag that has an id called text
+  8. create 2 br tags
+  9. Repeat steps 5 ~ 8
+    + The first image should be Stone.webp that's in MC-DataTypes folder
+    + The second image should be sword_durability.png that's in MC-DataTypes folder
+    + The third image should be Potion_of_Swiftness.webp that's in MC-DataTypes folder
+    + the fourth image should be Fly.webp that's in MC-DataTypes folder
+    + The pre tag should have an id called wholeNumbers
+  10. Repeat steps 5 ~ 7
+    + The first image should be Diamond_Pickaxe.webp that's in MC-DataTypes folder
+    + The second image should be Diamond_Sword.webp that's in MC-DataTypes folder
+    + The pre tag should have an id called decimal numbers
+      + the pre tag should be inside of a div tag with a class called centerElements
+  11. create an ```<a>``` tag that displays "Overworld Layers"
+      + its href should be overworld_layers.html
+      + its class should be centerElement
 
-### Part 2B:
+### Part 2B: 2nd HTML File (overworld_layers.html)
 
-WIP
+  1. create a h1 tag that displays "Overworld Layers"
+  2. create 2 br tags
+  3. create an img tag that has plans.jpg as its source
+    + type in centerElement as its class
+    + type in imageLayer as its id
+  4. create 2 more br tags
+  5. create a ```<h3>``` tag that displays "Click on the arrow buttons to ascend or descend certain layers"  
+    + the class should be centerElements to position the header 3 at the center
+  6. create another br tag 
+  7. create a h1 tag that displays "y = 5"
+    + type in getVerticalPosition as its id
+  8. create a h2 tag that displays "Layer: Plains"
+    + type in layerName as its id
+    + type in centerElements as its class 
+  9. create a div tag that has centerElements as its class
+    + 2 img tags should be inside of this tag
+      + the first image should be Left_Arrow.png and descend as its id
+      + the second image should be Right_Arrow.png and ascend as its id
+  10. create another br tag
+  11. create an ```<a>``` tag that displays "MC Data Types"
+    + its href should be index.html
+    + its class should be centerElement
 
-### Part 3: 
+### Part 3: CSS (style.css)
 
-WIP
+  1.  link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag:
+  ```css
+  <link rel="stylesheet" href="style.css">
+  ```
+  2.  import the minecrafttia font by typing in the following:
+  ```css
+  @import url("https://fontlibrary.org//face/minecraftia");
+  ```
+This will only make the minecraftia font available to use for your webpage. So, to change the default font to the minecraftia one, you must also change the font-family attribute for certain CSS selectors.    
+  3. give the following attributes to the body selector
+    + backgroud image is dirt_background.jpg
+    + font-family is MinecraftiaRegular
+  4. give the following attributes to the h1 selector
+    + color is white
+    + text align is center
+  5. give the following attributes to h2 and h3 selectors
+    + color is white
+    + **Hint:** you can either create 2 separate selectors or merge them into one selector
+  
+  CSS template of 2 selectors in 1:
+  ```css
+  selector1, selector2 {
+    attribute: value;
+  }
+  ```
+  6. give the following attributes to the pre selector
+    + color is white
+    + font family is MinecraftiaRegular
+    + font size is larger
+The reason why we update the font family to the pre tags is because the font from console.log() cannot be changed.  So, we must change the JavaScript text via the pre selector.
+  
+  7. create 3 class selectors called changeImageSize, changeImageSize2, and changeImageSize3
+    + the first one should have a width and height of 255px
+    + the second one should have a width and height of 320px
+    + the third one should have a width of 600px and a height of 300px
+  8. create a class selector called centerElements, and the the following attributes should have:
+    + display is flex (to create a flex box)
+    + justify content is space around (whitespacing at the left and right sides of the images)
+    + align items is center (center the images, text, etc.)
+    + flex direction is row (display the contents in a row)
+  9. create an 'a' selector and give the following attributes:
+    + text align is center
+    + color is rgb(0, 255, 0)
+    + background color is gray
+    + font size is 21px
+    + text decoration is none (no underline for links)
 
-### Part 4A: 
+### Part 4A: 1st JavaScript File (variables.js) 
 
-WIP
+  1. add variables.js to index.html by doing the following inside the end of the ```<body>``` tag:
+  ```html
+  <!--  some html code that's above enabling JS  -->
+  <script src="variables.js"></script>
+  ```
+  2. The
+  3. 
 
-### Part 4B:
+### Part 4B: 2nd JavaScript File (script.js)
 
-WIP
+  1. add script.js to overworld_layers.html by doing the following inside the end of the ```<body>``` tag:
+  ```html
+  <!--  some html code that's above enabling JS  -->
+  <script src="script.js"></script>
+  ```
+  2. create five variables that gets the elements by ids
+    + first variable is called Layer and takes the id called imageLayer
+    + second variable is called descendVertically and takes the id called descend
+    + third variable is called ascendVertically and takes the id called ascend
+    + fourth variable is called verticalPosition and takes the id called getVerticalPosition
+    + fifth variable is called location_name and takes the id called layerName
+  3. create a variable called y_position that stores an int value of 5
+  4. create 2 addEventListener methods for descendVertically and ascendVertically
+    + make sure the first parameter is "click" (with quotation marks) and the second parameter is an unnamed function
+  5. decrement the y_position by 1 inside the unnamed function of descendVertically
+  6. increment the y_position by 1 inside the unnamed function of ascendVertically
+  7. update the y_position on the webpage by using ```.innerHTML``` for verticalPosition, in both add event listeners
+  8. create an if/else statement for each add event listeners, the if/else statement should inculde: 
+    + if y_position is >= 48
+      + the image source of Layer would be Space.png
+      + location_name.innerHTML would be "Layer: Outer Space" 
+    + else if y_position is >= 24
+      + the image source of Layer would be Sky.jpg
+      + location_name.innerHTML would be "Layer: Above the Clouds"
+    + else if y_position is >= 12
+      + the image source of Layer would be mountains.webp
+      + location_name.innerHTML would be "Layer: Mountains"
+    + else if y_position is >= 9
+      + the image source of Layer would be Jungle.webp
+      + location_name.innerHTML would be "Layer: Jungle"
+    + else if y_position is >= 7
+      + the image source of Layer would be Forest.webp
+      + location_name.innerHTML would be "Layer: Forest"
+    + else if y_position is >= 5
+      + the image source of Layer would be plains.jpg
+      + location_name.innerHTML would be "Layer: Plains"
+    + else if y_position is >= 2
+      + the image source of Layer would be Cave.webp
+      + location_name.innerHTML would be "Layer: Caves"
+    + else if y_position is >= 0
+      + the image source of Layer would be Lava_Cave.webp
+      + location_name.innerHTML would be "Layer: Lava Caves"
+    + else if y_position is >= -4
+      + the image source of Layer would be Deepslate_Cave.webp
+      + location_name.innerHTML would be "Layer: Deepslate Caves"
+    + else if y_position is >= -12
+      + the image source of Layer would be DeepDark.webp
+      + location_name.innerHTML would be "Layer: The Deep Dark"
+    + else
+      + the image source of Layer would be The_Void.webp
+      + location_name.innerHTML would be "Layer: Void"     
 
 ## Stretch Goals
 

@@ -37,35 +37,19 @@ a {
     text-decoration: none;
 }
 
-.centerElements {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-}
-
 .changeImageSize {
-    width: 255px;
-    height: 255px;
-}
-
-.changeImageSize2 {
-    width: 320px;
-    height: 320px;
-}
-
-.changeImageSize3 {
     width: 600px;
     height: 300px;
 }
 
-/* Another way to center elements */
-.centerElement {
-    /* dsplay block displays image similar to how a paragraph is displayed */
+.centerElements {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row; */
     display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* style="margin-left: 144px; margin-bottom: 48px;"style="margin-left: 24px;"style="margin-left: 16px;" */

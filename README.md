@@ -133,25 +133,22 @@ Completing Part2A means you have the images and text approximately positioned at
 ### Part 2B: 2nd HTML File (overworld_layers.html)
 
   1. create a h1 tag that displays "Overworld Layers"
-  2. create 2 br tags
-  3. create an img tag that has plans.jpg as its source
+  2. create an img tag that has plans.jpg as its source
       + type in centerElement as its class
       + type in imageLayer as its id
-  4. create 2 more br tags
-  5. create a ```<h3>``` tag that displays "Click on the arrow buttons to ascend or descend certain layers"  
+  3. create a ```<h3>``` tag that displays "Click on the arrow buttons to ascend or descend certain layers"  
       + the class should be centerElements to position the header 3 at the center
-  6. create another br tag 
-  7. create a h1 tag that displays "y = 5"
+  4. create a h1 tag that displays "y = 5"
       + type in getVerticalPosition as its id
-  8. create a h2 tag that displays "Layer: Plains"
+  5. create a h2 tag that displays "Layer: Plains"
       + type in layerName as its id
       + type in centerElements as its class 
-  9. create a div tag that has centerElements as its class
+  6. create a div tag that has centerElements as its class
       + 2 img tags should be inside of this tag
       + the first image should be Left_Arrow.png and descend as its id
       + the second image should be Right_Arrow.png and ascend as its id
-  10. create another br tag
-  11. create an ```<a>``` tag that displays "MC Data Types"
+  7. create a br tag
+  8. create an ```<a>``` tag that displays "MC Data Types"
       + its href should be index.html
       + its class should be centerElement
 

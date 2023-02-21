@@ -284,16 +284,6 @@ By finishing Part 3, you have incorporated the Minecraft aesthetic to your websi
 You learned how to resize images in the CSS file.
 ```css
 .changeImageSize {
-    width: 255px;
-    height: 255px;
-}
-
-.changeImageSize2 {
-    width: 320px;
-    height: 320px;
-}
-
-.changeImageSize3 {
     width: 600px;
     height: 300px;
 }

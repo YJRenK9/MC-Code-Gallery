@@ -4,7 +4,7 @@ Now that you learned how to create variables and if/else statements, it's time t
 
 ![Gallery1](images/Examples/MC_DataTypes_Gallery.png) ![Gallery2](images/Examples/MC_DataTypes_Gallery2.png) ![Gallery3](images/Examples/Overworld_Layers_Gallery.png)
 
-I'd like to give you a **warning** that this project is pretty lengthy and requires the repetition of creating variables.  Hence, why this project is divided into 3 parts. 
+I'd like to give you a **warning** that this project could be lengthy and requires some repetition of creating variables.  Not to mention, around 330 lines of text.  Hence, why this project is divided into 6 parts. 
 
 ## Objectives
 
@@ -201,6 +201,8 @@ The reason why we update the font family to the pre tags is because the font fro
     + background color is gray
     + font size is 21px
     + text decoration is none (no underline for links)
+
+By finishing Part 3, you have incorporated the Minecraft aesthetic to your website :)
 
 ### Part 4A: 1st JavaScript File (variables.js) 
 

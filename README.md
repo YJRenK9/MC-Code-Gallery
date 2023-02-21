@@ -4,7 +4,7 @@ Now that you learned how to create variables and if/else statements, it's time t
 
 ![Gallery1](images/Examples/MC_DataTypes_Gallery.png) ![Gallery2](images/Examples/MC_DataTypes_Gallery2.png) ![Gallery3](images/Examples/Overworld_Layers_Gallery.png)
 
-I'd like to give you a **warning** that this project could be lengthy and requires some repetition of creating variables.  Not to mention, around 330 lines of text.  Hence, why this project is divided into 6 parts. 
+I'd like to give you a **warning** that this project could be lengthy and requires some repetition of creating variables.  Not to mention, this may be a long read as this read me file has around 330 lines of text.  Hence, why this project is divided into 6 parts. 
 
 ## Objectives
 
@@ -147,8 +147,8 @@ Completing Part2A means you have the images and text approximately positioned at
     + type in centerElements as its class 
   9. create a div tag that has centerElements as its class
     + 2 img tags should be inside of this tag
-      + the first image should be Left_Arrow.png and descend as its id
-      + the second image should be Right_Arrow.png and ascend as its id
+    + the first image should be Left_Arrow.png and descend as its id
+    + the second image should be Right_Arrow.png and ascend as its id
   10. create another br tag
   11. create an ```<a>``` tag that displays "MC Data Types"
     + its href should be index.html

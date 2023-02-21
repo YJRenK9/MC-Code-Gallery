@@ -21,7 +21,8 @@ To complete this project, students should have the following:
   + Basic understanding of CSS properties.
   + Basic understanding of JavaScript and DOM.
     + int, float, string, and bool variables
-    + if/else statements 
+    + if/else statements
+    + getElementById() and addEventListener()
 
 ## Concepts
 
@@ -88,19 +89,36 @@ Notice how '+=' is used to join multiple strings together.  This is to add more 
 
 ## Your Challenge
 
-### Part I
+### Part I: Setup
+
+Create a folder called MC_Code_Gallery.
+
+In this folder, create the following files:
+  + index.html
+  + overworld_layers.html
+  + style.css
+  + variables.js
+  + script.js
+
+Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery/blob/main/images.zip (a download button should be present).  Drag that zip file in the folder called MC_Code_Gallery and unzip it.  You should have the images folder with minecraft images present in your project folder. 
+
+### Part 2A:
 
 WIP
 
-### Part II
+### Part 2B:
 
 WIP
 
-### Part III
+### Part 3: 
 
 WIP
 
-### Part IV
+### Part 4A: 
+
+WIP
+
+### Part 4B:
 
 WIP
 

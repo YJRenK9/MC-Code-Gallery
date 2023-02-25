@@ -275,7 +275,7 @@ By finishing Part 3, you have incorporated the Minecraft aesthetic to your websi
       + else if y_position is >= 5
         + layer.src would be plains.jpg
         + location_name.innerHTML would be "Layer: Plains"
-      + else if y_position is >= 3
+      + else if y_position is >= 2
         + layer.src would be Cave.webp
         + location_name.innerHTML would be "Layer: Caves"
       + else if y_position is >= 0

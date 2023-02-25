@@ -23,7 +23,6 @@ To complete this project, students should have the following:
   + Basic understanding of JavaScript and DOM.
     + int, float, string, and bool variables
     + if/else statements
-    + getElementById() and addEventListener()
 
 ## Concepts
 
@@ -106,29 +105,26 @@ Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery
 ### Part 2A: 1st HTML File (index.html)
 
   1. create a ```<h1>``` tag that displays "Welcome to the Minecraft Code Gallery!" (do not include double quotes)
-  2. create 2 ```<br>``` tags
-  3. create a ```<h2>``` tag that displays "Game Rule Data Types"
-  4. create a br tag
-  5. create 2 ```<div>``` tags that have a class called centerElements
-  6. create 2 img tags inside of the first div tag 
+  2. create a ```<h2>``` tag that displays "Game Rule Data Types"
+  3. create 2 ```<div>``` tags that have a class called centerElements
+  4. create 2 img tags inside of the first div tag 
       + The first image should be superflat.webp
       + The second image should be SuperFLatGlitch.png
       + Both images have a class called changeImageSize
-  7. Create a ```<pre>``` tag that has an id called booleans1
+  5. Create a ```<pre>``` tag that has an id called booleans1
       + this pre tag is in the second div tag
-  8. create 2 br tags
-  9. create 2 more ```<div>``` tags that have a class called centerElements
-  10. create 2 more img tags inside of the third div tag 
+  6. create 2 more ```<div>``` tags that have a class called centerElements
+  7. create 2 more img tags inside of the third div tag 
       + The third image should be keptInventory.webp
       + The fourth image should be didNotKeepInventory.webp
       + Both images have a class called changeImageSize
-  11. Create a ```<pre>``` tag that has an id called booleans2
+  8. Create a ```<pre>``` tag that has an id called booleans2
       + this pre tag is in the fourth div tag
-  12. create an ```<a>``` tag that displays "Overworld Layers"
+  9. create an ```<a>``` tag that displays "Overworld Layers"
       + its href should be overworld_layers.html
       + its class should be centerElement
       
-Completing Part2A means you have the images and text approximately positioned at the center of the webpage (except for the header 2)
+Completing Part2A means you have the images and text approximately positioned at the center of the webpage (except for the header 2).  Feel free to use <br> tags to properly format your webpage.
 
 ### Part 2B: 2nd HTML File (overworld_layers.html)
 
@@ -147,8 +143,7 @@ Completing Part2A means you have the images and text approximately positioned at
       + 2 img tags should be inside of this tag
       + the first image should be Left_Arrow.png and descend as its id
       + the second image should be Right_Arrow.png and ascend as its id
-  7. create a br tag
-  8. create an ```<a>``` tag that displays "MC Data Types"
+  7. create an ```<a>``` tag that displays "MC Data Types"
       + its href should be index.html
       + its class should be centerElement
 
@@ -156,10 +151,12 @@ Completing Part2A means you have the images and text approximately positioned at
 
   1.  link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag:
   ```css
+  <!-- enables the CSS file to format and decorate the webpage -->
   <link rel="stylesheet" href="style.css">
   ```
   2.  import the minecrafttia font by typing in the following:
   ```css
+  /* minecraft font is ready to be used */
   @import url("https://fontlibrary.org//face/minecraftia");
   ```
 This will only make the minecraftia font available to use for your webpage. So, to change the default font to the minecraftia one, you must also change the font-family attribute for certain CSS selectors.    
@@ -186,14 +183,12 @@ This will only make the minecraftia font available to use for your webpage. So, 
     
 The reason why we update the font family to the pre tags is because the font from console.log() cannot be changed.  So, we must change the JavaScript text via the pre selector.
   
-  7. create a class selector called changeImageSize
-      + a width of 600px and a height of 300px
-  8. create a class selector called centerElements, and the the following attributes should have:
-      + display is flex (to create a flex box)
-      + justify content is space around (whitespacing at the left and right sides of the images)
-      + align items is center (center the images, text, etc.)
-      + flex direction is row (display the contents in a row)
-  9. create an 'a' selector and give the following attributes:
+  7. create a class selector called centerElements, and the the following attributes should have:
+      + display is block
+      + text align is center
+      + margin left is auto
+      + margin right is auto
+  8. create an 'a' selector and give the following attributes:
       + text align is center
       + color is rgb(0, 255, 0)
       + background color is gray
@@ -216,12 +211,22 @@ By finishing Part 3, you have incorporated the Minecraft aesthetic to your websi
   3. create the following boolean variables
       + boolValue1, stores false
       + boolValue2, stores true
-  4. create a variable called paragraph1, that gets the element's id "booleans1"
-  5. have paragraph1's innerHTML string concactenate dataType, variableName1, " = ", and boolValue1 (**Hint:** use + in between variables)
-  6. have paragraph1's innerHTML also string concactenate "\t\t\t\t", dataType, variableName1, and boolValue2 (**Hint:** use +=)
-  7. create a variable called paragraph2, that gets the element's id "booleans2"
-  8. have paragraph2's innerHTML string concactenate dataType, variableName2, " = ", and boolValue1 (**Hint:** use + in between variables)
-  9. have paragraph1's innerHTML also string concactenate "\t\t\t\t", dataType, variableName2, and boolValue2 (**Hint:** use +=)
+  4. apply the following code snippet
+  ```js
+  // gets the element id called booleans1
+  var paragraph1 = document.getElementById("booleans1");
+
+  // gets the element id called booleans2
+  var paragraph2 = document.getElementById("booleans2");
+  ```
+  5. Use ```.innerHTML```, string concactenation, "\t", and the variables from steps 2 & 3 to display variable declaration to the webpage
+  
+  Here's a code template:
+  ```js
+  // the whitespaces sandwiching the '=' makes the text more readable
+  paragrpah.innerHTML = data_type + variable_name + " = " + value;
+  paragraph.innerHTML += <4 tabs> + data_type + variable_name + " = " + value
+  ```
 
 ### Part 4B: 2nd JavaScript File (script.js)
 
@@ -230,52 +235,57 @@ By finishing Part 3, you have incorporated the Minecraft aesthetic to your websi
   <!--  some html code that's above enabling JS  -->
   <script src="script.js"></script>
   ```
-  2. create five variables that gets the elements by ids
-      + first variable is called Layer and takes the id called imageLayer
-      + second variable is called descendVertically and takes the id called descend
-      + third variable is called ascendVertically and takes the id called ascend
-      + fourth variable is called verticalPosition and takes the id called getVerticalPosition
-      + fifth variable is called location_name and takes the id called layerName
+  2. add the following code snippet:
+  ```js
+  // used to change the image
+  var layer = document.getElementById("imageLayer");
+
+  // used to decrease the displayed y_position value
+  var descendVeritcally = document.getElementById("descend");
+  // used to increase the displayed y_position value
+  var ascendVeritcally = document.getElementById("ascend");
+
+  // used to display the y_postion on the webpage
+  var verticalPosition = document.getElementById("getVerticalPosition");
+
+  // used to get the name of the layer depending on the y_position
+  var location_name = document.getElementById("layerName");
+  ```
   3. create a variable called y_position that stores an int value of 5
-  4. create 2 addEventListener methods for descendVertically and ascendVertically
-      + make sure the first parameter is "click" (with quotation marks) and the second parameter is an unnamed function
+  4. add the following code snippets
+  ```js
+  descendVertically.addEventListener("click", function() {
+    
+  });
+  
+  ascendVertically.addEventListener("click", function() {
+    
+  });
+  ```
   5. decrement the y_position by 1 inside the unnamed function of descendVertically
   6. increment the y_position by 1 inside the unnamed function of ascendVertically
   7. update the y_position on the webpage by using ```.innerHTML``` for verticalPosition, in both add event listeners
   8. create an if/else statement for each add event listeners, the if/else statement should inculde: 
-      + if y_position is >= 48
-        + the image source of Layer would be Space.png
-        + location_name.innerHTML would be "Layer: Outer Space" 
-      + else if y_position is >= 24
-        + the image source of Layer would be Sky.jpg
+      + if y_position is >= 20
+        + layer.src would be Sky.jpg
         + location_name.innerHTML would be "Layer: Above the Clouds"
-      + else if y_position is >= 12
-        + the image source of Layer would be mountains.webp
+      + else if y_position is >= 10
+        + layer.src would be mountains.webp
         + location_name.innerHTML would be "Layer: Mountains"
-      + else if y_position is >= 9
-        + the image source of Layer would be Jungle.webp
-        + location_name.innerHTML would be "Layer: Jungle"
-      + else if y_position is >= 7
-        + the image source of Layer would be Forest.webp
-        + location_name.innerHTML would be "Layer: Forest"
       + else if y_position is >= 5
-        + the image source of Layer would be plains.jpg
+        + layer.src would be plains.jpg
         + location_name.innerHTML would be "Layer: Plains"
-      + else if y_position is >= 2
-        + the image source of Layer would be Cave.webp
+      + else if y_position is >= 3
+        + layer.src would be Cave.webp
         + location_name.innerHTML would be "Layer: Caves"
       + else if y_position is >= 0
-        + the image source of Layer would be Lava_Cave.webp
+        + layer.src would be Lava_Cave.webp
         + location_name.innerHTML would be "Layer: Lava Caves"
-      + else if y_position is >= -4
-        + the image source of Layer would be Deepslate_Cave.webp
-        + location_name.innerHTML would be "Layer: Deepslate Caves"
-      + else if y_position is >= -12
-        + the image source of Layer would be DeepDark.webp
-        + location_name.innerHTML would be "Layer: The Deep Dark"
       + else
-        + the image source of Layer would be The_Void.webp
-        + location_name.innerHTML would be "Layer: Void"     
+        + layer.src would be The_Void.webp
+        + location_name.innerHTML would be "Layer: Void"
+        
+layer.src represents the image source, which is used to change the image.  location_name.innerHTML is used to change the text on the webpage.  Remember to use the proper file paths for your images.  
 
 ## Stretch Goals
 

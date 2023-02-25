@@ -254,10 +254,12 @@ By finishing Part 3, you have incorporated the Minecraft aesthetic to your websi
   3. create a variable called y_position that stores an int value of 5
   4. add the following code snippets
   ```js
+  // have the left arrow "button" manipulate the webpage when clicked on
   descendVertically.addEventListener("click", function() {
     
   });
   
+  // have the right arrow "button" manipulate the webpage when clicked on
   ascendVertically.addEventListener("click", function() {
     
   });

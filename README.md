@@ -138,12 +138,6 @@ Completing Part2A means you have the images and text approximately positioned at
       + its href should be index.html
       + its class should be centerElement
 
-### Part 3: CSS (style.css)
-
-
-
-By finishing Part 3, you have incorporated the Minecraft aesthetic to your website :)
-
 ### Part 3A: 1st JavaScript File (variables.js) 
 
   1. add variables.js to index.html by doing the following inside the end of the ```<body>``` tag:

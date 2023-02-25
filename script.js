@@ -1,5 +1,5 @@
 // used to change the image
-var Layer = document.getElementById("imageLayer");
+var layer = document.getElementById("imageLayer");
 
 // used to decrease the displayed y_position value
 var descendVeritcally = document.getElementById("descend");
@@ -24,39 +24,29 @@ descendVeritcally.addEventListener("click", function() {
     verticalPosition.innerHTML = "y = " + y_position;
 
     // frequently checks the y position in order to determine what layer the player is in
-    if (y_position >= 48) {
-        Layer.src = "images/Space.png";
-        location_name.innerHTML = "Layer: Outer Space";
-    } else if (y_position >= 24) {
-        Layer.src = "images/Sky.jpg";
+    if (y_position >= 20) {
+        // sky background appears if the the vertical position is 20 or higher
+        layer.src = "images/Sky.jpg";
         location_name.innerHTML = "Layer: Above the Clouds";
-    } else if (y_position >= 12) {
-        Layer.src = "images/mountains.webp";
+    } else if (y_position >= 10) {
+        // mountains background appears if the the vertical position is 10 ~ 19
+        layer.src = "images/mountains.webp";
         location_name.innerHTML = "Layer: Mountains";
-    } else if (y_position >= 9) {
-        Layer.src = "images/Jungle.webp";
-        location_name.innerHTML = "Layer: Jungle";
-    } else if (y_position >= 7) {
-        Layer.src = "images/Forest.webp";
-        location_name.innerHTML = "Layer: Forest";
     } else if (y_position >= 5) {
-        Layer.src = "images/plains.jpg";
+        // plains background appears if the the vertical position is 5 ~ 9
+        layer.src = "images/plains.jpg";
         location_name.innerHTML = "Layer: Plains";
     } else if (y_position >= 2) {
-        Layer.src = "images/Cave.webp";
+        // cave background appears if the the vertical position is 2 ~ 4
+        layer.src = "images/Cave.webp";
         location_name.innerHTML = "Layer: Caves";
     } else if (y_position >= 0) {
-        Layer.src = "images/Lava_Cave.webp";
+        // lava cave background appears if the the vertical position is 0 ~ 1
+        layer.src = "images/Lava_Cave.webp";
         location_name.innerHTML = "Layer: Lava Caves";
-    } else if (y_position >= -4) {
-        Layer.src = "images/Deepslate_Cave.webp";
-        location_name.innerHTML = "Layer: Deepslate Caves";
-    } else if (y_position >= -12) {
-        Layer.src = "images/DeepDark.webp";
-        location_name.innerHTML = "Layer: The Deep Dark";
     } else {
-        // when the y position is below -12
-        Layer.src = "images/The_Void.webp";
+        // when the y position is below 0
+        layer.src = "images/The_Void.webp";
         location_name.innerHTML = "Layer: Void";
     }
 });
@@ -70,39 +60,29 @@ ascendVeritcally.addEventListener("click", function() {
     verticalPosition.innerHTML = "y = " + y_position;
 
     // frequently checks the y position in order to determine what layer the player is in
-    if (y_position >= 48) {
-        Layer.src = "images/Space.png";
-        location_name.innerHTML = "Layer: Outer Space";
-    } else if (y_position >= 24) {
-        Layer.src = "images/Sky.jpg";
+    if (y_position >= 20) {
+        // sky background appears if the the vertical position is 20 or higher
+        layer.src = "images/Sky.jpg";
         location_name.innerHTML = "Layer: Above the Clouds";
-    } else if (y_position >= 12) {
-        Layer.src = "images/mountains.webp";
+    } else if (y_position >= 10) {
+        // mountains background appears if the the vertical position is 10 ~ 19
+        layer.src = "images/mountains.webp";
         location_name.innerHTML = "Layer: Mountains";
-    } else if (y_position >= 9) {
-        Layer.src = "images/Jungle.webp";
-        location_name.innerHTML = "Layer: Jungle";
-    } else if (y_position >= 7) {
-        Layer.src = "images/Forest.webp";
-        location_name.innerHTML = "Layer: Forest";
     } else if (y_position >= 5) {
-        Layer.src = "images/plains.jpg";
+        // plains background appears if the the vertical position is 5 ~ 9
+        layer.src = "images/plains.jpg";
         location_name.innerHTML = "Layer: Plains";
     } else if (y_position >= 2) {
-        Layer.src = "images/Cave.webp";
+        // cave background appears if the the vertical position is 2 ~ 4
+        layer.src = "images/Cave.webp";
         location_name.innerHTML = "Layer: Caves";
     } else if (y_position >= 0) {
-        Layer.src = "images/Lava_Cave.webp";
+        // lava cave background appears if the the vertical position is 0 ~ 1
+        layer.src = "images/Lava_Cave.webp";
         location_name.innerHTML = "Layer: Lava Caves";
-    } else if (y_position >= -4) {
-        Layer.src = "images/Deepslate_Cave.webp";
-        location_name.innerHTML = "Layer: Deepslate Caves";
-    } else if (y_position >= -12) {
-        Layer.src = "images/DeepDark.webp";
-        location_name.innerHTML = "Layer: The Deep Dark";
     } else {
-        // when the y position is below -12
-        Layer.src = "images/The_Void.webp";
+        // when the y position is below 0
+        layer.src = "images/The_Void.webp";
         location_name.innerHTML = "Layer: Void";
     }
 });

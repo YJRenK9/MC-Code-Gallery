@@ -161,14 +161,14 @@ Completing Part2A means you have the images and text approximately positioned at
   ```
 This will only make the minecraftia font available to use for your webpage. So, to change the default font to the minecraftia one, you must also change the font-family attribute for certain CSS selectors.    
   3. give the following attributes to the body selector
-      + backgroud image is dirt_background.jpg
-      + font-family is MinecraftiaRegular
+        + backgroud image is dirt_background.jpg
+        + font-family is MinecraftiaRegular
   4. give the following attributes to the h1 selector
-      + color is white
-      + text align is center
+        + color is white
+        + text align is center
   5. give the following attributes to h2 and h3 selectors
-      + color is white
-      + **Hint:** you can either create 2 separate selectors or merge them into one selector
+        + color is white
+        + **Hint:** you can either create 2 separate selectors or merge them into one selector
   
   CSS template of 2 selectors in 1:
   ```css

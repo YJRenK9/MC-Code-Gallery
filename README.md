@@ -19,7 +19,7 @@ Use **JavaScript** to display text and manipulate elements on webpages.  Also, u
 To complete this project, students should have the following:
   + Basic understanding of HTML structures and attributes.
   + Basic understanding of CSS properties.
-  + Basic understanding of JavaScript and DOM.
+  + Basic understanding of JavaScript.
     + int, float, string, and bool variables
     + if/else statements
 

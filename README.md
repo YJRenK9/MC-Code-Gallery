@@ -5,7 +5,7 @@ Now that you learned how to create variables and if/else statements, it's time t
 ![Gallery1](images/Examples/MC_DataTypes_Gallery.png)
 ![Gallery3](images/Examples/Overworld_Layers_Gallery.png)
 
-I'd like to give you a **warning** that this project could be lengthy and requires some repetition of creating variables.  Not to mention, this may be a long read as this read me file has around 330 lines of text.  Hence, why this project is divided into 6 parts. 
+I'd like to give you a **warning** that this project could be lengthy.  Not to mention, this may be a long read as this read me file has around 300 lines of text.  Hence, why this project is divided into 5 parts. 
 
 ## Objectives
 
@@ -300,4 +300,4 @@ Although it's easy to implement an input box, you'll deal with more test cases. 
 
 ### Create another webpage of Minecraft coding references
 
-Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.  You can also apply int, float, and string variables to the rest of the minecraft images provided in the images zip file.   
+Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.  You can also apply int, float, and string variables to the rest of the minecraft images provided in the images zip file.  Not to mention, try to include "\n" to your JS files.   

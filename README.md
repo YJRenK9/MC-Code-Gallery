@@ -38,14 +38,6 @@ The `<pre>` tag is similar to the `<p>` tag, however, it preserves the whitespac
 
 More information about `<pre>` can be found at [W3Schools](https://www.w3schools.com/tags/tag_pre.asp) and [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre). 
 
-| CSS  | Description |
-| ------------- | ------------- |
-| @import url | imports other stylesheets, including custom fonts, into an existing CSS file |
-
-We'll use `@import url("#");` to import a custom font into this project.  The "#" represents a website link to a custom font.  Like any programming language, `@import url("#");` must be used at the very top of your CSS file.
-
-Side note: URL stands for uniform resource locator
-
 | JavaScript  | Description |
 | ------------- | ------------- |
 | \t | escape sequence for horizontal tab |
@@ -96,7 +88,6 @@ Create a folder called MC_Code_Gallery.
 In this folder, create the following files:
   + index.html
   + overworld_layers.html
-  + style.css
   + variables.js
   + script.js
 
@@ -149,55 +140,11 @@ Completing Part2A means you have the images and text approximately positioned at
 
 ### Part 3: CSS (style.css)
 
-  1.  link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag:
-  ```css
-  <!-- enables the CSS file to format and decorate the webpage -->
-  <link rel="stylesheet" href="style.css">
-  ```
-  2.  import the minecrafttia font by typing in the following:
-  ```css
-  /* minecraft font is ready to be used */
-  @import url("https://fontlibrary.org//face/minecraftia");
-  ```
-This will only make the minecraftia font available to use for your webpage. So, to change the default font to the minecraftia one, you must also change the font-family attribute for certain CSS selectors.    
-  3. give the following attributes to the body selector
-        + backgroud image is dirt_background.jpg
-        + font-family is MinecraftiaRegular
-  4. give the following attributes to the h1 selector
-        + color is white
-        + text align is center
-  5. give the following attributes to h2 and h3 selectors
-        + color is white
-        + **Hint:** you can either create 2 separate selectors or merge them into one selector
-  
-  CSS template of 2 selectors in 1:
-  ```css
-  selector1, selector2 {
-    attribute: value;
-  }
-  ```
-  6. give the following attributes to the pre selector
-      + color is white
-      + font family is MinecraftiaRegular
-      + font size is larger
-    
-The reason why we update the font family to the pre tags is because the font from console.log() cannot be changed.  So, we must change the JavaScript text via the pre selector.
-  
-  7. create a class selector called centerElements, and the the following attributes should have:
-      + display is block
-      + text align is center
-      + margin left is auto
-      + margin right is auto
-  8. create an 'a' selector and give the following attributes:
-      + text align is center
-      + color is rgb(0, 255, 0)
-      + background color is gray
-      + font size is 21px
-      + text decoration is none (no underline for links)
+
 
 By finishing Part 3, you have incorporated the Minecraft aesthetic to your website :)
 
-### Part 4A: 1st JavaScript File (variables.js) 
+### Part 3A: 1st JavaScript File (variables.js) 
 
   1. add variables.js to index.html by doing the following inside the end of the ```<body>``` tag:
   ```html
@@ -228,7 +175,7 @@ By finishing Part 3, you have incorporated the Minecraft aesthetic to your websi
   paragraph.innerHTML += <4 tabs> + data_type + variable_name + " = " + value
   ```
 
-### Part 4B: 2nd JavaScript File (script.js)
+### Part 3B: 2nd JavaScript File (script.js)
 
   1. add script.js to overworld_layers.html by doing the following inside the end of the ```<body>``` tag:
   ```html
@@ -296,6 +243,63 @@ layer.src represents the image source, which is used to change the image.  locat
 Add more else if's to your if/else statement and use images such as DeepDark.webp, Deepslate_Cave.webp, Forest.webp, Jungle.webp, and Space.png 
 
 ### Add hover animation for links
+
+### Add CSS to your website
+
+| CSS  | Description |
+| ------------- | ------------- |
+| @import url | imports other stylesheets, including custom fonts, into an existing CSS file |
+
+We'll use `@import url("#");` to import a custom font into this project.  The "#" represents a website link to a custom font.  Like any programming language, `@import url("#");` must be used at the very top of your CSS file.
+
+Side note: URL stands for uniform resource locator
+
+  1. create a CSS file called style.css  
+  2. link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag:
+  ```css
+  <!-- enables the CSS file to format and decorate the webpage -->
+  <link rel="stylesheet" href="style.css">
+  ```
+  3. import the minecrafttia font by typing in the following:
+  ```css
+  /* minecraft font is ready to be used */
+  @import url("https://fontlibrary.org//face/minecraftia");
+  ```
+This will only make the minecraftia font available to use for your webpage. So, to change the default font to the minecraftia one, you must also change the font-family attribute for certain CSS selectors.    
+  4. give the following attributes to the body selector
+        + backgroud image is dirt_background.jpg
+        + font-family is MinecraftiaRegular
+  5. give the following attributes to the h1 selector
+        + color is white
+        + text align is center
+  6. give the following attributes to h2 and h3 selectors
+        + color is white
+        + **Hint:** you can either create 2 separate selectors or merge them into one selector
+  
+  CSS template of 2 selectors in 1:
+  ```css
+  selector1, selector2 {
+    attribute: value;
+  }
+  ```
+  7. give the following attributes to the pre selector
+      + color is white
+      + font family is MinecraftiaRegular
+      + font size is larger
+    
+The reason why we update the font family to the pre tags is because the font from console.log() cannot be changed.  So, we must change the JavaScript text via the pre selector.
+  
+  8. create a class selector called centerElements, and the the following attributes should have:
+      + display is block
+      + text align is center
+      + margin left is auto
+      + margin right is auto
+  9. create an 'a' selector and give the following attributes:
+      + text align is center
+      + color is rgb(0, 255, 0)
+      + background color is gray
+      + font size is 21px
+      + text decoration is none (no underline for links)
 
 You learned how to color the text of the link, give it a background color, and change its font size.  You also learned how to position the link.
 ```css

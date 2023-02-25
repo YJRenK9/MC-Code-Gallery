@@ -18,7 +18,6 @@ Use **JavaScript** to display text and manipulate elements on webpages.  Also, u
 
 To complete this project, students should have the following:
   + Basic understanding of HTML structures and attributes.
-    + img and div tags 
   + Basic understanding of CSS properties.
   + Basic understanding of JavaScript and DOM.
     + int, float, string, and bool variables
@@ -30,7 +29,6 @@ To complete this project, students should have the following:
 | ------------- | ------------- |
 | br | The line break element |
 | img | Element that embeds an image on a webpage |
-| div | Division tag that's a container element |
 | pre | The preformatted text element |
 
 The `<br>` tag is pretty handy when you want to format your webpage by creating vertical line spacing between text and images.  This would make your webpage look nicer instead of having every element compacted so close to each other.  
@@ -97,46 +95,34 @@ Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery
 
   1. create a ```<h1>``` tag that displays "Welcome to the Minecraft Code Gallery!" (do not include double quotes)
   2. create a ```<h2>``` tag that displays "Game Rule Data Types"
-  3. create 2 ```<div>``` tags that have a class called centerElements
-  4. create 2 img tags inside of the first div tag 
+  4. create 2 img tags 
       + The first image should be superflat.webp
       + The second image should be SuperFLatGlitch.png
-      + Both images have a class called changeImageSize
   5. Create a ```<pre>``` tag that has an id called booleans1
-      + this pre tag is in the second div tag
-  6. create 2 more ```<div>``` tags that have a class called centerElements
-  7. create 2 more img tags inside of the third div tag 
+  6. create 2 more img tags 
       + The third image should be keptInventory.webp
       + The fourth image should be didNotKeepInventory.webp
-      + Both images have a class called changeImageSize
-  8. Create a ```<pre>``` tag that has an id called booleans2
-      + this pre tag is in the fourth div tag
-  9. create an ```<a>``` tag that displays "Overworld Layers"
+  7. Create a ```<pre>``` tag that has an id called booleans2
+  8. create an ```<a>``` tag that displays "Overworld Layers"
       + its href should be overworld_layers.html
-      + its class should be centerElement
       
-Completing Part2A means you have the images and text approximately positioned at the center of the webpage (except for the header 2).  Feel free to use <br> tags to properly format your webpage.
+Completing Part2A means you have 4 images and two pre tags.  Feel free to use <br> tags to properly format your webpage.
 
 ### Part 2B: 2nd HTML File (overworld_layers.html)
 
   1. create a h1 tag that displays "Overworld Layers"
-  2. create an img tag that has plans.jpg as its source
-      + type in centerElement as its class
+  2. create an img tag that has plains.jpg as its source
       + type in imageLayer as its id
   3. create a ```<h3>``` tag that displays "Click on the arrow buttons to ascend or descend certain layers"  
-      + the class should be centerElements to position the header 3 at the center
   4. create a h1 tag that displays "y = 5"
       + type in getVerticalPosition as its id
   5. create a h2 tag that displays "Layer: Plains"
       + type in layerName as its id
-      + type in centerElements as its class 
-  6. create a div tag that has centerElements as its class
-      + 2 img tags should be inside of this tag
+  6. create 2 img tags
       + the first image should be Left_Arrow.png and descend as its id
       + the second image should be Right_Arrow.png and ascend as its id
   7. create an ```<a>``` tag that displays "MC Data Types"
       + its href should be index.html
-      + its class should be centerElement
 
 ### Part 3A: 1st JavaScript File (variables.js) 
 

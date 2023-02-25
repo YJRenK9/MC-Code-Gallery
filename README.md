@@ -289,20 +289,9 @@ layer.src represents the image source, which is used to change the image.  locat
 
 ## Stretch Goals
 
-### Change Image Size within HTML files
+### Add more to overworld_layers.html
 
-You learned how to resize images in the CSS file.
-```css
-.changeImageSize {
-    width: 600px;
-    height: 300px;
-}
-```
-You can also resize images in HTML, and it's "easier" as it requires less lines of code.  Just type in the width and height inside of the image tag.  Here's an example of resizing an image in HTML:
-```html
-<!-- image became twice as large -->
-<img width="320px" height="320px" src="images/MC-DataTypes/Netherite_Axe.webp" alt="netherite axe">
-```
+Add more else if's to your if/else statement and use images such as DeepDark.webp, Deepslate_Cave.webp, Forest.webp, Jungle.webp, and Space.png 
 
 ### Add hover animation for links
 

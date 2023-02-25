@@ -281,6 +281,10 @@ The reason why we update the font family to the pre tags is because the font fro
       + font size is 21px
       + text decoration is none (no underline for links)
 
+Don't forget to add divs in your HTML files
+
+### Make hover animations for links
+
 You learned how to color the text of the link, give it a background color, and change its font size.  You also learned how to position the link.
 ```css
 a {

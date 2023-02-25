@@ -236,7 +236,7 @@ Side note: URL stands for uniform resource locator
 
   1. create a CSS file called style.css  
   2. link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag:
-  ```css
+  ```html
   <!-- enables the CSS file to format and decorate the webpage -->
   <link rel="stylesheet" href="style.css">
   ```

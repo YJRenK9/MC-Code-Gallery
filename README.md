@@ -222,8 +222,6 @@ layer.src represents the image source, which is used to change the image.  locat
 
 Add more else if's to your if/else statement and use images such as DeepDark.webp, Deepslate_Cave.webp, Forest.webp, Jungle.webp, and Space.png 
 
-### Add hover animation for links
-
 ### Add CSS to your website
 
 | CSS  | Description |
